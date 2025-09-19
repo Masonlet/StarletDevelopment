@@ -29,7 +29,7 @@ Run one of the included `clone_starlet_` files
 ```bash
 mkdir build
 cd build 
-cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DBUILD_LOCAL=ON ..
 ```
 `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` flag generates a `compile_commands.json` file  
 Can be safely omitted on Windows if you're using Visual Studio
