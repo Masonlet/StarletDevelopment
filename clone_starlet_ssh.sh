@@ -1,16 +1,32 @@
 mkdir -p Starlet
-cd Starlet
+cd Starlet || exit
 
-repos=(StarletMath StarletControls StarletScene StarletGraphics StarletParsers StarletEngine StarletSamples StarletStarter)
+user=Masonlet
+test_repo=${1:-StarletSamples}
+
+repos=(
+  ${user}/StarletMath 
+  ${user}/StarletControls 
+  ${user}/StarletScene 
+  ${user}/StarletGraphics 
+  ${user}/StarletParsers 
+  ${user}/StarletEngine 
+  ${user}/${test_repo}
+)
 
 for repo in "${repos[@]}"; do
   if [ ! -d "$repo" ]; then
-    git clone git@github.com:Masonlet/$repo.git
+    git clone git@github.com:$repo.git
   else
     echo "$repo already exists!"
   fi
-  echo""
+  echo ""
 done
 
-echo "Finished, closing"
-sleep 1.5
+echo "Finished cloning, building.."
+cd ..
+
+mkdir -p build
+cd build || exit
+cmake -DBUILD_LOCAL=ON -DTEST_REPO=${test_repo} ..
+
