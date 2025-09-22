@@ -30,3 +30,5 @@ mkdir -p build
 cd build || exit
 cmake -DBUILD_LOCAL=ON -DTEST_REPO=${test_repo} ..
 
+echo "Finished building, closing.."
+sleep 5
