@@ -16,7 +16,7 @@ set(modules
   StarletControls
   StarletScene
   StarletGraphics
-  StarletParsers
+  StarletParser
   StarletEngine
   ${TEST_REPO}
 )
