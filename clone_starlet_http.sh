@@ -9,7 +9,7 @@ repos=(
   ${user}/StarletControls 
   ${user}/StarletScene 
   ${user}/StarletGraphics 
-  ${user}/StarletParser
+  ${user}/StarletSerializer
   ${user}/StarletEngine 
   ${user}/${test_repo}
 )
