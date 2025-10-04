@@ -9,7 +9,7 @@ The **Starlet** ecyostem is a collection of light, modular C++ libraries designe
 - [**StarletControls**](https://github.com/Masonlet/StarletControls) – Input & control management
 - [**StarletScene**](https://github.com/Masonlet/StarletScene) – ECS based scene management
 - [**StarletGraphics**](https://github.com/Masonlet/StarletGraphics) – Mesh, texture, shader management
-- [**StarletParser**](https://github.com/Masonlet/StarletParsers) – Lightweight file and text parser
+- [**StarletSerializer**](https://github.com/Masonlet/StarletSerializer) – Lightweight file/text parser/writer
 - [**StarletTests**](https://github.com/Masonlet/StarletTests) – Unit tests for Starlet libraries using Google Test
 - [**StarletSamples**](https://github.com/Masonlet/StarletSamples) – Engine demonstration & sample scenes.
 - [**StarletStarter**](https://github.com/Masonlet/StarletStarter) - Starting template for new Starlet game projects
